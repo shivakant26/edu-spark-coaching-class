@@ -52,7 +52,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +63,6 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-/* loading */
 .loading,
 .page-not-found {
   display: flex;
@@ -81,10 +79,9 @@
   text-align: center;
   color: red;
 }
-/* for banner */
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/images/banner-img.jpg"); /* ✅ Change path as needed */
+    url("/images/banner-img.jpg"); 
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -98,7 +95,7 @@
 .banner-content h1 {
   font-size: 36px;
   margin-bottom: 15px;
-  color: #ffd700; /* Yellow Heading */
+  color: #ffd700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .banner-content p {
@@ -121,7 +118,6 @@
 .cta-button:hover {
   background-color: #e6c200;
 }
-/* for why chooes us */
 .why-choose-us {
   background-color: #f4f6f8;
   padding: 60px 20px;
@@ -163,7 +159,6 @@
   color: #333;
   font-size: 15px;
 }
-/* for our course */
 .courses-section {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -212,7 +207,6 @@
   font-size: 15px;
   color: #333;
 }
-/* our mission */
 .commitment-section {
   background-color: #fefefe;
   padding: 60px 20px;
@@ -266,13 +260,11 @@
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
-/* about page */
 .about-section {
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
 }
-/* Layout Container */
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -309,7 +301,6 @@
   font-size: 16px;
   color: #0052cc;
 }
-/* Image Section */
 .about-image {
   flex: 1;
   min-width: 300px;
@@ -324,7 +315,6 @@
 .about-image img:hover {
   transform: scale(1.03);
 }
-/* courses page */
 .courses-section {
   padding: 60px 20px;
   background-color: #f9fafc;
@@ -372,19 +362,13 @@
   font-size: 15px;
   color: #444;
 }
-
-/* responsive css */
-/* 🔹 Extra Large Screens (1366px+) */
 @media (min-width: 1366px) {
   .center_wr {
     width: 96%;
   }
 }
-
-@media (max-width: 1200px) {
-  
+@media (max-width: 1200px) { 
 }
-
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
@@ -392,5 +376,4 @@
 @media (max-width: 650px) {
 }
 @media (max-width: 480px) {
- 
 }

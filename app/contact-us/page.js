@@ -4,14 +4,12 @@ export default function Contact() {
   return (
     <section className={styles.contactSection}>
       <div className={styles.container}>
-        {/* Left Side: Contact Info */}
         <div className={styles.info}>
           <h2>📞 Contact Us</h2>
           <p>
-            We would love to hear from you! Whether you're a parent or a student
+            We would love to hear from you! Whether you&apos;re a parent or a student
             — feel free to reach out.
           </p>
-
           <ul>
             <li>
               <strong>📍 Address:</strong> EduSpark Coaching Class Chachai Road
@@ -28,8 +26,6 @@ export default function Contact() {
             </li>
           </ul>
         </div>
-
-        {/* Right Side: Form */}
         <div className={styles.formBox}>
           <form className="form">
             <input type="text" placeholder="Your Name" required />
@@ -39,8 +35,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-
-      {/* Optional Map */}
       <div className={styles.map}>
         <iframe
           title="location"

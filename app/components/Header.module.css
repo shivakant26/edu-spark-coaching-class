@@ -1,5 +1,5 @@
 .header {
-    background-color: #002244; /* Dark Navy Blue */
+    background-color: #002244;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -34,7 +34,6 @@
     color: #002244;
     font-weight: bold;
   }
-  /* for mobile menu */
   .mobile_menu {
     display: none;
   }
@@ -57,16 +56,13 @@
     border-radius: 5px;
   }
   .mobile_menus ul li{
-    padding: 10px;
-    
+    padding: 10px; 
   }
   .mobile_menus ul li a{
     text-decoration: none;
     margin-bottom: 10px;
   }
-
   @media (max-width: 992px) {
-    /* Change flex-direction, reduce font sizes */
     .menu {
       display: none;
     }

@@ -1,4 +1,3 @@
-/* for footer */
 .footer {
     background-color: #002244;
     color: #ffffff;
@@ -16,11 +15,9 @@
     flex: 1;
     min-width: 250px;
   }
-
   .footer_column p{
     padding: 5px 0px;
   }
-  
   .footer_column h3 {
     margin-bottom: 15px;
     color: #ffd700;
@@ -54,7 +51,6 @@
     cursor: pointer;
     font-weight: bold;
   }
-  
   .subscribe_btn:hover {
     background-color: #e0c000;
   }

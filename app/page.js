@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default async function Home() {
   return (
     <div>
@@ -6,7 +8,7 @@ export default async function Home() {
           <div className="banner-content">
             <h1>Unlock Your Bright Future</h1>
             <p>
-              Join the top coaching institute for SSC, Banking, UPSC & more.
+              Join the top coaching institute for SSC, Banking, UPSC &amp; more.
             </p>
             <a href="/courses" className="cta-button">
               Explore Courses
@@ -24,14 +26,15 @@ export default async function Home() {
             <div className="feature-box">
               <h3>📘 Classes 1st to 10th</h3>
               <p>
-                All subjects with complete conceptual clarity & personal
+                All subjects with complete conceptual clarity &amp; personal
                 attention.
               </p>
             </div>
             <div className="feature-box">
-              <h3>🧪 11th & 12th PCM</h3>
+              <h3>🧪 11th &amp; 12th PCM</h3>
               <p>
-                Physics, Chemistry & Maths by subject experts with test series.
+                Physics, Chemistry &amp; Maths by subject experts with test
+                series.
               </p>
             </div>
             <div className="feature-box">
@@ -42,32 +45,31 @@ export default async function Home() {
               </p>
             </div>
             <div className="feature-box">
-              <h3>🧠 Reasoning & Aptitude</h3>
+              <h3>🧠 Reasoning &amp; Aptitude</h3>
               <p>Logical reasoning sessions for competitive exam success.</p>
             </div>
             <div className="feature-box">
               <h3>📊 Math Mastery</h3>
               <p>
-                From basics to advanced — shortcut techniques & tricks included.
+                From basics to advanced — shortcut techniques &amp; tricks
+                included.
               </p>
             </div>
             <div className="feature-box">
               <h3>🌍 General Knowledge</h3>
               <p>
-                Stay updated with daily current affairs & static GK quizzes.
+                Stay updated with daily current affairs &amp; static GK quizzes.
               </p>
             </div>
           </div>
         </div>
       </section>
-
       <section className="courses-section">
         <div className="center_wr">
           <h2>Our Courses</h2>
           <p className="courses-subheading">
             We offer a wide range of coaching from school to competitive level.
           </p>
-
           <div className="course-grid">
             <div className="course-card">
               <span className="course-icon">📘</span>
@@ -77,16 +79,14 @@ export default async function Home() {
                 regular tests.
               </p>
             </div>
-
             <div className="course-card">
               <span className="course-icon">📐</span>
-              <h3>11th & 12th (PCM)</h3>
+              <h3>11th &amp; 12th (PCM)</h3>
               <p>
                 Physics, Chemistry, and Math coaching by expert faculty with
                 detailed notes.
               </p>
             </div>
-
             <div className="course-card">
               <span className="course-icon">🏫</span>
               <h3>Navodaya Entrance</h3>
@@ -95,10 +95,9 @@ export default async function Home() {
                 exam.
               </p>
             </div>
-
             <div className="course-card">
               <span className="course-icon">🧠</span>
-              <h3>Reasoning & Aptitude</h3>
+              <h3>Reasoning &amp; Aptitude</h3>
               <p>
                 Short tricks and concepts to master reasoning for competitive
                 exams.
@@ -116,7 +115,7 @@ export default async function Home() {
               <span className="course-icon">🌍</span>
               <h3>General Knowledge</h3>
               <p>
-                Static GK & current affairs with quizzes and weekly updates.
+                Static GK &amp; current affairs with quizzes and weekly updates.
               </p>
             </div>
           </div>
@@ -128,23 +127,28 @@ export default async function Home() {
             <div className="commitment-text">
               <h2>🎯 Our Commitment</h2>
               <p className="tagline">
-                We don't just teach — we build a brighter future.
+                We don&rsquo;t just teach — we build a brighter future.
               </p>
               <p>
-                At Bright Future Coaching, our goal is to guide every student
+                At EduSpark Coaching Classes, our goal is to guide every student
                 toward success with proper planning, personal attention, and the
                 right motivation.
               </p>
               <ul className="commitment-list">
                 <li>✅ Daily doubt-solving sessions</li>
                 <li>✅ Small batch size for personal focus</li>
-                <li>✅ Regular class tests & performance tracking</li>
-                <li>✅ Monthly motivation & progress meetings</li>
+                <li>✅ Regular class tests &amp; performance tracking</li>
+                <li>✅ Monthly motivation &amp; progress meetings</li>
                 <li>✅ Special support for weak students</li>
               </ul>
             </div>
             <div className="commitment-image">
-              <img src="/images/our-misson.jpg" alt="Our Mission" />
+              <Image
+                src="/images/our-misson.jpg"
+                alt="Our Mission"
+                width={600}
+                height={400}
+              />
             </div>
           </div>
         </div>
