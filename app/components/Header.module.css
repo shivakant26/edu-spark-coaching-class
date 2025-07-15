@@ -1,0 +1,76 @@
+.header {
+    background-color: #002244; /* Dark Navy Blue */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+  }
+  .logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd700;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  .menu ul li a:hover {
+    background-color: #ffd700;
+    color: #002244;
+    font-weight: bold;
+  }
+  /* for mobile menu */
+  .mobile_menu {
+    display: none;
+  }
+  .humb_menu_icon {
+    position: relative;
+  }
+  .humb_menu_icon span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .mobile_menus {
+    position: absolute;
+    right: 0;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    width: 200px;
+    border-radius: 5px;
+  }
+  .mobile_menus ul li{
+    padding: 10px;
+    
+  }
+  .mobile_menus ul li a{
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 992px) {
+    /* Change flex-direction, reduce font sizes */
+    .menu {
+      display: none;
+    }
+    .mobile_menu {
+      display: block;
+    }
+  }

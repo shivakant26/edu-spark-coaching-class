@@ -1,42 +1,396 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "poppinsbold";
+  src: url("/fonts/poppins-bold-webfont.eot");
+  src: url("/fonts/poppins-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("/fonts/poppins-bold-webfont.woff") format("woff"),
+    url("/fonts/poppins-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "poppinsmedium";
+  src: url("/fonts/poppins-medium-webfont.eot");
+  src: url("/fonts/poppins-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/poppins-medium-webfont.woff2") format("woff2"),
+    url("/fonts/poppins-medium-webfont.woff") format("woff"),
+    url("/fonts/poppins-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+  font-family: "poppinsregular";
+  src: url("/fonts/poppins-regular-webfont.eot");
+  src: url("/fonts/poppins-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("/fonts/poppins-regular-webfont.woff") format("woff"),
+    url("/fonts/poppins-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "poppinslight";
+  src: url("/fonts/poppins-light-webfont.eot");
+  src: url("/fonts/poppins-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("/fonts/poppins-light-webfont.woff") format("woff"),
+    url("/fonts/poppins-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinssemibold";
+  src: url("/fonts/poppins-semibold-webfont.eot");
+  src: url("/fonts/poppins-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/poppins-semibold-webfont.woff") format("woff"),
+    url("/fonts/poppins-semibold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppinsregular";
 }
-
-a {
-  color: inherit;
+.center_wr {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* loading */
+.loading,
+.page-not-found {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.loading h2 {
+  color: blue;
+}
+.page-not-found p {
+  font-size: 35px;
+  text-align: center;
+  color: red;
+}
+/* for banner */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/banner-img.jpg"); /* ✅ Change path as needed */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+}
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffd700; /* Yellow Heading */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-button {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #ffd700;
+  color: #002244;
   text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #e6c200;
+}
+/* for why chooes us */
+.why-choose-us {
+  background-color: #f4f6f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+.why-choose-us h2 {
+  font-size: 32px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+.feature-box h3 {
+  color: #0052cc;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.feature-box p {
+  color: #333;
+  font-size: 15px;
+}
+/* for our course */
+.courses-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.courses-section h2 {
+  font-size: 32px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+.courses-subheading {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.course-card {
+  background-color: #f4f6f8;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.course-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #0052cc;
+}
+.course-card h3 {
+  color: #002244;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.course-card p {
+  font-size: 15px;
+  color: #333;
+}
+/* our mission */
+.commitment-section {
+  background-color: #fefefe;
+  padding: 60px 20px;
+}
+.commitment-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.commitment-text {
+  flex: 1;
+  min-width: 300px;
+}
+.commitment-text h2 {
+  color: #002244;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.commitment-text .tagline {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.commitment-text p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.commitment-list {
+  list-style: none;
+  padding: 0;
+}
+.commitment-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #0052cc;
+  font-weight: 500;
+}
+.commitment-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+.commitment-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+/* about page */
+.about-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+/* Layout Container */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+/* Text Section */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-text h2 {
+  font-size: 32px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: 18px;
+  color: #0052cc;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.points {
+  list-style: none;
+  margin-top: 20px;
+}
+.points li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #0052cc;
+}
+/* Image Section */
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.about-image img:hover {
+  transform: scale(1.03);
+}
+/* courses page */
+.courses-section {
+  padding: 60px 20px;
+  background-color: #f9fafc;
+  text-align: center;
+}
+.courses-title {
+  font-size: 32px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+.courses-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.course-card {
+  background-color: #fff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.course-card:hover {
+  transform: translateY(-6px);
+}
+.course-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #0052cc;
+  line-height: 74px;
+}
+.course-card h3 {
+  font-size: 20px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+.course-card p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* responsive css */
+/* 🔹 Extra Large Screens (1366px+) */
+@media (min-width: 1366px) {
+  .center_wr {
+    width: 96%;
   }
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 650px) {
+}
+@media (max-width: 480px) {
+ 
 }
