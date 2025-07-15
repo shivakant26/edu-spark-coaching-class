@@ -1,5 +1,7 @@
 import styles from "@/components/Footer.module.css";
-
+import { FaLocationDot, FaPhoneVolume , FaSquareTwitter } from "react-icons/fa6";
+import { FaFacebookSquare , FaLinkedin , FaWhatsappSquare } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
@@ -10,9 +12,9 @@ export default function Footer() {
             Welcome to EduSpark Classes, your trusted partner for competitive
             exams.
           </p>
-          <p>📍 Chachai Road Sirmour , Rewa(m.p.)</p>
-          <p>📞 +91-7693882898</p>
-          <p>📧 shivakanttiwari123@gmail.com</p>
+          <p><FaLocationDot /> Chachai Road Sirmour , Rewa(m.p.)</p>
+          <p><FaPhoneVolume /> +91-7693882898</p>
+          <p><IoIosMail /> shivakanttiwari123@gmail.com</p>
         </div>
 
         <div className={styles.footer_column}>
@@ -46,15 +48,15 @@ export default function Footer() {
           />
           <button className={styles.subscribe_btn}>Subscribe</button>
           <div className={styles.social_icons}>
-            <a href="#">📘</a>
-            <a href="#">📷</a>
-            <a href="#">🐦</a>
-            <a href="#">▶️</a>
+            <a href="#"><FaSquareTwitter /></a>
+            <a href="#"><FaFacebookSquare /></a>
+            <a href="#"><FaLinkedin /></a>
+            <a href="#"><FaWhatsappSquare /></a>
           </div>
         </div>
       </div>
       <div className={styles.footer_bottom}>
-        &copy; 2025 Bright Future Coaching. All rights reserved.
+        &copy; 2025 EduSpark Coaching Classes. All rights reserved.
       </div>
     </footer>
   );
