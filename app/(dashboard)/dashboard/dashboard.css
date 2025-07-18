@@ -1,0 +1,44 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  .sidebar {
+    width: 25%;
+    min-width: 220px;
+    background-color: #1e293b;
+    color: white;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 12px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .menu li:hover {
+    background-color: #334155;
+  }
+  
+  .content {
+    width: 75%;
+    padding: 40px;
+    background-color: #f1f5f9;
+  }
+  

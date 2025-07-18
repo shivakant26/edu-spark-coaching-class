@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../components/Header.module.css";
-import menuData from "@/utils/data/menuData";
+import menuData from "@/(main)/utils/data/menuData";
 
 export default function Header() {
   const [show, setShow] = useState(false);
