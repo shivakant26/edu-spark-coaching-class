@@ -7,11 +7,9 @@ import { RiAdminFill } from "react-icons/ri";
 
 export default function JoinNowPage() {
   const router = useRouter();
-
   const handleClick = (role) => {
     router.push(`/join-now/${role}`);
   };
-
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>Join As</h1>
